@@ -120,6 +120,15 @@ public enum ResponseCode {
         public String getDescription() {
             return "max.transaction.count.exceeded";
         }
+    },
+    CARD_NOT_ACTIVE(1025, 78, 125, 1025, false) {
+        /**
+         * ’Blocked, first used’—The transaction is from a new cardholder, and the card has not been properly unblocked.
+         * @return
+         */
+        public String getDescription() {
+            return "card.not.active";
+        }
     };
 
     private final int value;
