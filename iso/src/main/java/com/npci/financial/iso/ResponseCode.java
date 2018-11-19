@@ -8,6 +8,7 @@ public enum ResponseCode {
          *Restricted card (for example, in country exclusion table)
          * @return
          */
+        @Override
         public String getDescription() {
             return "expired.card";
         }
