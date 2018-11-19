@@ -152,6 +152,13 @@ public enum ResponseCode {
         public String getDescription() {
             return "card.not.active";
         }
+    },
+
+
+    OTP_GENERATION_NOT_ALLOWED(6001, 57, 119, 1019, false) {
+        public String getDescription() {
+            return "OTP.generation.not.allowed";
+        }
     };
 
     private final int value;
