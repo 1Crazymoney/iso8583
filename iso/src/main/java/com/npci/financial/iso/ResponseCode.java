@@ -13,13 +13,14 @@ public enum ResponseCode {
             return "expired.card";
         }
     },
-    FRUAD_TRANSACTION(1002, 59, 102, 1002, false) {
+    FRAUD_TRANSACTION(1002, 59, 102, 1002, false) {
         /**
          *
          * @return
          */
+        @Override
         public String getDescription() {
-            return "fruad.transaction";
+            return "fraud.transaction";
         }
     },
     RESTRICTED_CARD(1004, 62, 104, 1004, false) {
@@ -27,6 +28,7 @@ public enum ResponseCode {
          *
          * @return
          */
+        @Override
         public String getDescription() {
             return "restricted.card";
         }
@@ -36,6 +38,7 @@ public enum ResponseCode {
          * 	Allowable number of PIN-entry tries exceeded
          * @return
          */
+        @Override
         public String getDescription() {
             return "max.pin.retry.exceeded";
         }
@@ -45,6 +48,7 @@ public enum ResponseCode {
          * Invalid amount (currency conversion field overflow) or amount exceeds maximum for card program
          * @return
          */
+        @Override
         public String getDescription() {
             return "invalid.amount";
         }
@@ -54,6 +58,7 @@ public enum ResponseCode {
          * Invalid account number (no such number)
          * @return
          */
+        @Override
         public String getDescription() {
             return "invalid.card.number";
         }
@@ -63,6 +68,7 @@ public enum ResponseCode {
          *
          * @return
          */
+        @Override
         public String getDescription() {
             return "insufficient.funds";
         }
@@ -82,6 +88,7 @@ public enum ResponseCode {
          *
          * @return
          */
+        @Override
         public String getDescription() {
             return "transaction.not.allowed.to.cardholder";
         }
@@ -91,6 +98,7 @@ public enum ResponseCode {
          *
          * @return
          */
+        @Override
         public String getDescription() {
             return "transaction.not.allowed.to.terminal";
         }
@@ -100,6 +108,7 @@ public enum ResponseCode {
          * 	Activity amount limit exceeded
          * @return
          */
+        @Override
         public String getDescription() {
             return "amount.exceeded";
         }
@@ -109,6 +118,7 @@ public enum ResponseCode {
          *
          * @return
          */
+        @Override
         public String getDescription() {
             return "security.violation";
         }
@@ -118,6 +128,7 @@ public enum ResponseCode {
          *
          * @return
          */
+        @Override
         public String getDescription() {
             return "max.transaction.count.exceeded";
         }
@@ -127,6 +138,7 @@ public enum ResponseCode {
          * ’Blocked, first used’—The transaction is from a new cardholder, and the card has not been properly unblocked.
          * @return
          */
+        @Override
         public String getDescription() {
             return "card.not.active";
         }
