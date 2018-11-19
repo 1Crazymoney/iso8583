@@ -63,6 +63,16 @@ public enum ResponseCode {
             return "invalid.card.number";
         }
     },
+    INVALID_PAYMENT_ID(1014, 44, 114, 1014, false) {
+        /**
+         *
+         * @return
+         */
+        @Override
+        public String getDescription() {
+            return "invalid.payment.id";
+        }
+    },
     INSUFFICIENT_FUNDS(1016, 51, 116, 1016, false) {
         /**
          *
