@@ -155,9 +155,14 @@ public enum ResponseCode {
     },
 
 
-    OTP_GENERATION_NOT_ALLOWED(6001, 57, 119, 1019, false) {
+    OTP_NOT_CONFIGED(6001, 57, 119, 1019, false) {
+        /**
+         *
+         * @return
+         */
+        @Override
         public String getDescription() {
-            return "OTP.generation.not.allowed";
+            return "otp.not.configed";
         }
     };
 
