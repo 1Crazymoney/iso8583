@@ -6,7 +6,7 @@
 
     <groupId>com.npci.financial</groupId>
     <artifactId>iso-core</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <build>
         <finalName>iso-core</finalName>
